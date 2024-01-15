@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --black: #131318;
+  --Dark-02: #424247;
+  --Orange: #ff5400;
+}
+/* header section styles */
+header {
+  padding: 30px 80px;
+}
+nav .site-title-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+nav .site-title-container .site-title {
+  color: var(--black);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+nav .site-title-container .site-title-text {
+  color: var(--Orange);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-links ul {
+  display: flex;
+  gap: 44px;
+}
+nav .nav-links li {
+  list-style-type: none;
+}
+nav .nav-links li a {
+  text-decoration: none;
+  color: var(--Dark-02);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+nav .nav-links li .home {
+  color: var(--Orange);
+  font-weight: 700;
+}
+nav .toggle-nav {
+  display: none;
+}
+/* responsive styles here */
+@media screen and (max-width: 600px) {
+  nav .nav-links ul {
+    display: none;
+  }
+  nav .toggle-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    padding: 15px 5px;
+  }
+  nav .site-title-container .site-title {
+    font-size: 1.346rem;
+  }
+}
