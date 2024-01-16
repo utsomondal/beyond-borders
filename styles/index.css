@@ -221,17 +221,103 @@ nav {
   display: flex;
   justify-content: center;
 }
-.card-container .card h3 {
+.card-container .card h3,
+.newsletter-content h3 {
   color: #131318;
   font-size: 1.5rem;
   font-weight: 800;
   margin-top: 32px;
   margin-bottom: 16px;
 }
-.card-container .card p {
+.card-container .card p,
+.newsletter-content p {
   color: #5a5a5d;
   margin-top: 0;
 }
+/* newsletter section styles */
+.newsletter {
+  display: flex;
+  gap: 24px;
+  margin-top: 100px;
+}
+.newsletter-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+}
+.newsletter-content hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.subscription {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-content input,
+.newsletter-content button {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 16px;
+  color: rgba(19, 19, 24, 0.3);
+  border-radius: 8px;
+  background-color: rgba(19, 19, 24, 0.05);
+  border: none;
+}
+.newsletter-content .button-holder button {
+  background-color: #ff5400;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.newsletter-img{
+  position: relative;
+}
+.newsletter-img .offer {
+  position: absolute;
+  right: 0.56vw;
+  bottom: 3.24vw;
+  color: #fff;
+  padding:15px 20px;
+  text-align: center;
+  width: 16.875vw;
+  border-radius: 16px;
+  background-color: #ff5400;
+  transform: rotate(-19.628deg);
+}
+/* footer styling */
+footer{
+  margin-top: 100px;
+  background-color: rgba(19, 19, 24, 0.05);
+  padding: 110px 300px;
+  text-align: center;
+}
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.footer-description{
+  margin-bottom: 35px;
+}
+.footer-links{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+footer hr{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer-links .fa-brands{
+  color: #131318;
+}
+footer .reserved{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+/* responsive styles for mobile */
 @media screen and (max-width: 600px) {
   main,
   header {
@@ -256,17 +342,19 @@ nav {
   .choose-content p {
     font-size: 0.875rem;
   }
-  .card-container .one-card-holder, 
+  .card-container .one-card-holder,
   .card-container .two-card-holder,
   .travel-search-holder,
   .travel-form-holder,
-  .popular-tours {
+  .popular-tours,
+  .newsletter  {
     flex-direction: column;
   }
   .travel-search-holder input,
   .travel-search-holder select,
   .travel-search-holder .btn button,
-  .popular-tours .column-2 img {
+  .popular-tours .column-2 img,
+  .newsletter-img img {
     width: 100%;
   }
   .img-container {
@@ -296,7 +384,25 @@ nav {
   .bandorban {
     grid-column: 1 / span 1;
   }
-  .card-container .card{
+  .card-container .card {
     width: 100%;
+  }
+  .newsletter-img .offer h3{
+    font-size: 1rem;
+  }
+  .newsletter-img .offer p{
+    font-size: 0.7;
+  }
+  .newsletter-img .offer {
+    width: 60vw;
+    right: 10px;
+    bottom: 45px;
+  }
+  footer{
+    padding: 30px 40px;
+  }
+  footer hr{
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
