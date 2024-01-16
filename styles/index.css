@@ -138,16 +138,22 @@ nav {
   padding: 14px 35px;
 }
 /* destination section */
-.destination-content {
+.destination {
+  margin-bottom: 100px;
+}
+.destination-content,
+.choose-content {
   text-align: center;
 }
-.destination-content h3 {
+.destination-content h3,
+.choose-content h3 {
   color: #131318;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 24px;
 }
-.destination-content p {
+.destination-content p,
+.choose-content p {
   color: rgba(19, 19, 24, 0.7);
   margin-top: 0;
   margin-bottom: 48px;
@@ -185,7 +191,47 @@ nav {
   object-fit: cover;
   border-radius: 16px;
 }
-
+/* why choose us section styles */
+.card-container .card {
+  padding: 16px;
+  width: 29.844vw;
+}
+.card-container .c1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background-color: rgba(251, 181, 99, 0.05);
+}
+.card-container .c2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background-color: rgba(41, 206, 246, 0.05);
+}
+.card-container .c3 {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background-color: rgba(233, 68, 68, 0.05);
+}
+.card-container .two-card-holder {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.card-container .one-card-holder {
+  display: flex;
+  justify-content: center;
+}
+.card-container .card h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.card-container .card p {
+  color: #5a5a5d;
+  margin-top: 0;
+}
 @media screen and (max-width: 600px) {
   main,
   header {
@@ -200,12 +246,18 @@ nav {
     align-items: center;
   }
   .logo-container h3,
-  .travel-search-content h3 {
+  .travel-search-content h3,
+  .destination-content h3,
+  .choose-content h3 {
     font-size: 1.343rem;
   }
-  .travel-search-content p {
+  .travel-search-content p,
+  .destination-content p,
+  .choose-content p {
     font-size: 0.875rem;
   }
+  .card-container .one-card-holder, 
+  .card-container .two-card-holder,
   .travel-search-holder,
   .travel-form-holder,
   .popular-tours {
@@ -217,7 +269,34 @@ nav {
   .popular-tours .column-2 img {
     width: 100%;
   }
+  .img-container {
+    grid-template-columns: 1fr;
+  }
   .travel-search {
     padding: 10px 15px;
+  }
+  .maldives {
+    grid-column: 1 / span 1;
+  }
+  .indonesia {
+    grid-column: 1 / span 1;
+  }
+  .srilanka {
+    grid-column: 1 / span 1;
+  }
+  .na {
+    grid-column: 1 / span 1;
+  }
+  .kashmir {
+    grid-column: 1 / span 1;
+  }
+  .bd {
+    grid-column: 1 / span 1;
+  }
+  .bandorban {
+    grid-column: 1 / span 1;
+  }
+  .card-container .card{
+    width: 100%;
   }
 }
