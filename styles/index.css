@@ -61,6 +61,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 130px;
+  margin-bottom: 100px;
 }
 .travel-search-content {
   text-align: center;
@@ -106,7 +107,85 @@ nav {
 .travel-search-holder .btn .fa-solid {
   margin-right: 10px;
 }
-/* responsive styles for mobile */
+/* popular-tours section styles */
+.popular-tours {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+.popular-tours h3 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.popular-tours p,
+.popular-tours ul li {
+  color: rgba(19, 19, 24, 0.7);
+  margin-bottom: 24px;
+}
+.popular-tours ul {
+  margin-left: 20px;
+}
+.popular-tours .more-btn button {
+  border-radius: 8px;
+  background-color: #ff5400;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border: none;
+  padding: 14px 35px;
+}
+/* destination section */
+.destination-content {
+  text-align: center;
+}
+.destination-content h3 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.destination-content p {
+  color: rgba(19, 19, 24, 0.7);
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+.img-container {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.maldives {
+  grid-column: 1 / span 6;
+}
+.indonesia {
+  grid-column: 7 / span 6;
+}
+.srilanka {
+  grid-column: 1 / span 4;
+}
+.na {
+  grid-column: 5 / span 4;
+}
+.kashmir {
+  grid-column: 9 / span 4;
+}
+.bd {
+  grid-column: 1 / span 6;
+}
+.bandorban {
+  grid-column: 7 / span 6;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
 @media screen and (max-width: 600px) {
   main,
   header {
@@ -121,25 +200,24 @@ nav {
     align-items: center;
   }
   .logo-container h3,
-  .travel-search-content h3  {
+  .travel-search-content h3 {
     font-size: 1.343rem;
   }
-  .travel-search-content p{
+  .travel-search-content p {
     font-size: 0.875rem;
   }
   .travel-search-holder,
-  .travel-form-holder {
+  .travel-form-holder,
+  .popular-tours {
     flex-direction: column;
   }
   .travel-search-holder input,
   .travel-search-holder select,
-  .travel-search-holder .btn button{
+  .travel-search-holder .btn button,
+  .popular-tours .column-2 img {
     width: 100%;
   }
   .travel-search {
     padding: 10px 15px;
   }
-}
-/* responsive styles for desktop */
-@media screen and (min-width: 99px) {
 }
